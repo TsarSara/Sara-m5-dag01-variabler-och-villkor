@@ -29,7 +29,9 @@ console.log(kafeNamn);
 // TODO: skapa en string, ett number, en boolean, en undefined och en null
 //       Typerna heter string, number, boolean, undefined och null
 const name: string = "Sara";
-let age: number = 52;
+const age: number = 52; //Jag hade först let eftersom min ålder ändras, 
+// men efter en kommentar från min vän CoPilot så ändrade jag till const. 
+// Det här är så förvirrande. I Java använder man ju sällan konstanter...
 let isEmployed: boolean = false;
 let futureJob;
 // När solen skiner så tänker jag:
@@ -45,10 +47,18 @@ console.log(typeof "Sara", typeof 52, typeof false, typeof futureJob, typeof nul
 
 // STEG 4 ------------------------------------------------------------
 // TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
+const summa: number = antalBullar * prisBulle + antalKaffe * prisKaffe;
+console.log(summa);
+
+
 // TODO: räkna ut momsDel (12 % ingår i priset): summa * 0.12 / 1.12
+const momsDel: number = summa * 0.12 / 1.12;
+console.log(momsDel);
+
 // TODO: skriv ut "Summa: ... kr" och "Varav moms (12 %): ... kr"
 //       Moms ska ha två decimaler (toFixed(2))
-//       Håll musen över momsDel.toFixed(2). Vilken typ ger toFixed?
+//       Håll musen över momsDel.toFixed(2). Vilken typ ger toFixed? String
+console.log(`Summa: ${summa} kr. Varav moms (12%) ${momsDel.toFixed(2)} kr`);
 
 
 // STEG 5 ------------------------------------------------------------
