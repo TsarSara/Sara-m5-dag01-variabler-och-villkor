@@ -21,15 +21,27 @@ console.log(antalBullar, antalKaffe);
 // TODO: skriv ut kafeNamn
 //       Skriv typen själv, till exempel:  const kafeNamn: string = "..."
 // Jag fattar inte riktigt den här. Ska jag skapa en ny kafeNamnvariabel, byta namn på Kafét eller bara skriva ut det med console.log?
+// Vet inte om de två meningarna hör ihop eller inte :)
 //const kafeNamn: string = "Panda kafè"; Det funkar ju inte eftersom det redan finns en const kafeNamn.
 console.log(kafeNamn);
 
 // STEG 3 ------------------------------------------------------------
 // TODO: skapa en string, ett number, en boolean, en undefined och en null
 //       Typerna heter string, number, boolean, undefined och null
-// TODO: skriv ut typeof för alla fem på en rad (tips: separera med komma)
-// TODO: prova att ge number-variabeln en text. Vad säger TypeScript?
+const name: string = "Sara";
+let age: number = 52;
+let isEmployed: boolean = false;
+let futureJob;
+// När solen skiner så tänker jag:
+let currentJob = null;
+// Här handlar det om framtidstro, eller inte. När det är grått ute blir det nog mer:
+//const currentJob: null; 
 
+// TODO: skriv ut typeof för alla fem på en rad (tips: separera med komma) 
+// Jag trodde att null skulle bli object eftersom du sa det på föreläsningen. :)
+console.log(typeof "Sara", typeof 52, typeof false, typeof futureJob, typeof null); 
+// TODO: prova att ge number-variabeln en text. Vad säger TypeScript?
+// Error: Type 'string' is not assignable to type 'number'. ts(2322)
 
 // STEG 4 ------------------------------------------------------------
 // TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
