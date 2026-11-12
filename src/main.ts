@@ -63,8 +63,18 @@ console.log(`Summa: ${summa} kr. Varav moms (12%) ${momsDel.toFixed(2)} kr`);
 
 // STEG 5 ------------------------------------------------------------
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
+const isStudent: boolean = true;
+
+let rabatt: number = 0;
+
+if (isStudent) {
+    rabatt = summa * 0.1;
+}
+console.log(rabatt.toFixed(2));
 // TODO: räkna ut attBetala (number) och skriv ut "Att betala: ... kr"
 
+const attBetala: number = summa - rabatt;
+console.log(`Att betala: ${attBetala.toFixed(2)} kr`);
 
 // STEG 6 ------------------------------------------------------------
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
