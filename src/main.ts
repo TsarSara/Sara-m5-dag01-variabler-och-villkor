@@ -8,11 +8,21 @@ console.log("Hej från Kafé Kardemumma");
 
 // STEG 2 ------------------------------------------------------------
 // TODO: skapa konstanten kafeNamn (string) med värdet "Kafé Kardemumma"
+const kafeNamn: string = "Kafé Kardemumma";
+console.log(kafeNamn);
 // TODO: skapa konstanterna prisBulle (number, 35) och prisKaffe (number, 32)
+const prisBulle: number = 35;
+const prisKaffe: number = 32;
+console.log(prisBulle, prisKaffe);
 // TODO: skapa variablerna antalBullar (2) och antalKaffe (1) med let, båda number
+let antalBullar: number = 2;
+let antalKaffe: number = 1;
+console.log(antalBullar, antalKaffe);
 // TODO: skriv ut kafeNamn
 //       Skriv typen själv, till exempel:  const kafeNamn: string = "..."
-
+// Jag fattar inte riktigt den här. Ska jag skapa en ny kafeNamnvariabel, byta namn på Kafét eller bara skriva ut det med console.log?
+//const kafeNamn: string = "Panda kafè"; Det funkar ju inte eftersom det redan finns en const kafeNamn.
+console.log(kafeNamn);
 
 // STEG 3 ------------------------------------------------------------
 // TODO: skapa en string, ett number, en boolean, en undefined och en null
