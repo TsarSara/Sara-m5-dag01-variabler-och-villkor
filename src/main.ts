@@ -77,12 +77,23 @@ console.log(`Att betala: ${attBetala.toFixed(2)} kr`);
 
 // STEG 6 ------------------------------------------------------------
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
-
+const veckodag: string = "lördag";
+const klockslag: number = 15;
 
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16
+let isOpen: boolean; 
+
+if (veckodag === "lördag" || veckodag === "söndag") {
+    isOpen = klockslag >= 9 && klockslag <= 16;
+} else  {
+    isOpen = klockslag >= 7 && klockslag <= 18; 
+} 
+console.log(isOpen);
 
 // TODO: skriv ut "Öppet just nu: ja" eller "Öppet just nu: nej"
+const text = isOpen ? "ja" : "nej";
 
+console.log(`Öppet just nu: ${text}`);
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
