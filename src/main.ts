@@ -52,7 +52,7 @@ console.log(summa);
 
 
 // TODO: räkna ut momsDel (12 % ingår i priset): summa * 0.12 / 1.12
-const momsDel: number = summa * 0.12 / 1.12;
+const momsDel = summa * 0.12 / 1.12;
 console.log(momsDel);
 
 // TODO: skriv ut "Summa: ... kr" och "Varav moms (12 %): ... kr"
@@ -64,21 +64,23 @@ console.log(`Summa: ${summa} kr. Varav moms (12%) ${momsDel.toFixed(2)} kr`);
 // STEG 5 ------------------------------------------------------------
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
 const isStudent: boolean = true;
-
 let rabatt: number = 0;
 
-if (isStudent) {
+if (isStudent === true) {
     rabatt = summa * 0.1;
 }
 console.log(rabatt.toFixed(2));
-// TODO: räkna ut attBetala (number) och skriv ut "Att betala: ... kr"
 
-const attBetala: number = summa - rabatt;
+// TODO: räkna ut attBetala (number) och skriv ut "Att betala: ... kr"
+let attBetala: number = summa - rabatt;
 console.log(`Att betala: ${attBetala.toFixed(2)} kr`);
 
 // STEG 6 ------------------------------------------------------------
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
+
+
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16
+
 // TODO: skriv ut "Öppet just nu: ja" eller "Öppet just nu: nej"
 
 
